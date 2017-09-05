@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutoWrapLayout">
+        <attr name="alignment">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fabColor" format="color" />
+        <attr name="fabDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PentagonParameterView">
+        <attr name="strokeColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="fillStrokeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FixedAspectImageView">
+        <attr name="aspect" format="float" />
+    </declare-styleable>
+
+</resources>

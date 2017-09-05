@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <!-- 
+            QUnit: http://docs.jquery.com/QUnit 
+            QUnit-Composite: http://www.elijahmanor.com/2012/05/qunit-compsite-addon-running-multiple.html
+            -->
+        <meta charset="UTF-8" />
+        <title>Volunteer Web API Test Suite (QUnit)</title>
+
+        <link rel="stylesheet" href="../qunit/qunit.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="../qunit/qunit-composite.css"/>
+        <script src="../qunit/qunit.js"></script>
+        <script src="../qunit/qunit-composite.js"></script>
+
+        <script>
+            QUnit.testSuites([
+                "get.tests.html"
+            ]);
+        </script>
+    </head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+    <ol style="margin:20% 30% 30%;font-size:x-large">
+        <li><a href="webapi.lookup.tests.html" target="_blank">查询测试</a></li>
+        <li><a href="webapi.register.tests.html" target="_blank">注册测试</a></li>
+    </ol>
+    
+</body>
+</html>

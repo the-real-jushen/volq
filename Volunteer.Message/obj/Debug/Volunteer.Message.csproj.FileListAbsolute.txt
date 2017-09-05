@@ -1,0 +1,6 @@
+D:\Project\Volunteer\Volunteer.Message\bin\Debug\Message.dll
+D:\Project\Volunteer\Volunteer.Message\bin\Debug\Message.pdb
+D:\Project\Volunteer\Volunteer.Message\bin\Debug\SimpleRepository.dll
+D:\Project\Volunteer\Volunteer.Message\obj\Debug\Volunteer.Message.csprojResolveAssemblyReference.cache
+D:\Project\Volunteer\Volunteer.Message\obj\Debug\Message.dll
+D:\Project\Volunteer\Volunteer.Message\obj\Debug\Message.pdb

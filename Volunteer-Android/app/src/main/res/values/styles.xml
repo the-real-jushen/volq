@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.CardTitle" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/primary_text_dark</item>
+    </style>
+
+    <style name="TextAppearance.CardMessage" parent="TextAppearance.AppCompat.Small" >
+        <item name="android:textColor">@color/primary_text_dark</item>
+    </style>
+
+    <style name="Widget.ActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid" />
+
+    <style name="Widget.ActionBar.Transparent">
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <!-- FloatingActionButton -->
+    <style name="FloatingActionButton">
+        <item name="android:minWidth">60dp</item>
+        <item name="android:minHeight">60dp</item>
+    </style>
+
+    <style name="FloatingActionButton.Small">
+        <item name="android:minWidth">44dp</item>
+        <item name="android:minHeight">44dp</item>
+    </style>
+
+</resources>

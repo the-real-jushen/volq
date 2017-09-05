@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.hippo.widget.refreshlayout.RefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hippo.widget.recyclerview.EasyRecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.hippo.widget.refreshlayout.RefreshLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:maxWidth="320dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawer_list" translatable="false">
+        <item>@string/title_news</item>
+        <item>@string/title_find_activities</item>
+        <item>@string/title_my_activities</item>
+        <item>@string/title_friends</item>
+        <item>@string/title_my_status</item>
+        <item>@string/title_scan</item>
+        <item>@string/title_my_qr_code</item>
+    </string-array>
+
+</resources>

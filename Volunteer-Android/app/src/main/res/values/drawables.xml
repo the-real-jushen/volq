@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="material_pink_200">@color/material_pink_200</drawable>
+    <drawable name="material_blue_200">@color/material_blue_200</drawable>
+    <drawable name="transparent">@android:color/transparent</drawable>
+
+</resources>

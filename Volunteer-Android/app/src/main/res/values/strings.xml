@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Volunteer</string>
+
+    <!-- Action -->
+    <string name="action_search">Search</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share">Share</string>
+    <string name="action_comment">Comment</string>
+
+    <!-- For drawer -->
+    <string name="drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="doing_thumb">activity thumb</string>
+    <string name="feed_thumb" translatable="false">feed thumb</string>
+    <string name="location">location</string>
+
+
+    <string name="title_news">News</string>
+    <string name="title_find_activities">Find activities</string>
+    <string name="title_my_activities">My activities</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_my_status">My status</string>
+
+    <!-- Refresh -->
+    <string name="click_to_refresh">Click to refresh</string>
+
+    <!-- User plane -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="role">Role</string>
+    <string name="gender">Gender</string>
+    <string name="hint_captcha">I am not a robot</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="title_user_status">User status</string>
+
+    <!-- Exit -->
+    <string name="exit_tip">Click again to exit</string>
+
+    <!-- Dialog -->
+    <string name="title_error">Error</string>
+    <string name="mesg_current_account_invaild">Currrnt account is invaild</string>
+    <string name="mesg_invaild_action">Invaild action</string>
+    <string name="mesg_invaild_parameters">Invaild parameters</string>
+
+    <!-- User status -->
+    <string name="title_info">Info</string>
+    <string name="title_badges">Badges</string>
+    <string name="title_doings">Doings</string>
+    <string name="base_info_title">Base information</string>
+    <string name="base_info_name">Name:</string>
+    <string name="base_info_email">Email:</string>
+    <string name="base_info_role">Role:</string>
+    <string name="base_info_affiliation">Affiliation:</string>
+    <string name="base_info_description">Description:</string>
+    <string name="location_title">Location</string>
+    <string name="location_none">No location</string>
+    <string name="property_title">Property</string>
+    <string name="growing_title">Growing</string>
+    <string name="growing_level">Level:</string>
+    <string name="growing_point">Point:</string>
+    <string name="growing_signed_in_activity_number">Signed in activity number:</string>
+    <string name="growing_complete_rate">Complete rate:</string>
+
+    <!-- Pentagon -->
+    <string name="pentagon_strength">Strength</string>
+    <string name="pentagon_intelligence">Intelligence</string>
+    <string name="pentagon_endurance">Endurance</string>
+    <string name="pentagon_compassion">Compassion</string>
+    <string name="pentagon_sacrifice">Sacrifice</string>
+
+    <!-- Role -->
+    <string name="role_volunteer">Volunteer</string>
+    <string name="role_organizer">Organizer</string>
+    <string name="role_organization">Organization</string>
+    <string name="role_anonymous">Anonymous</string>
+
+    <!-- Friends -->
+    <string name="my_friends">My Friends</string>
+    <string name="find_friends">Find Friends</string>
+    <string name="friends_ranking">Friends Ranking</string>
+    <string name="friend_apply">Friend Apply</string>
+
+    <!-- Doings -->
+    <string name="title_preparing">Preparing</string>
+    <string name="title_ongoing">Ongoing</string>
+    <string name="title_closed">Closed</string>
+    <string name="title_all">All</string>
+    <string name="title_i_finished">I Finished</string>
+
+    <!-- Doing -->
+    <string name="doing_time">Doing time:</string>
+    <string name="doing_signin_time">Signin time:</string>
+    <string name="doing_duration">Doing duration:</string>
+    <string name="doing_point">Doing point:</string>
+    <string name="doing_location">Doing location</string>
+
+    <!-- Map -->
+    <string name="title_map">Map</string>
+
+    <!-- Scan -->
+    <string name="title_scan">Scan</string>
+
+    <string name="title_my_qr_code">My QR code</string>
+
+    <!-- Util -->
+    <string name="join_separator">,&#160;</string>
+
+    <!-- Doing status -->
+    <string name="doing_status_draft">Draft</string>
+    <string name="doing_status_activate">Activate</string>
+    <string name="doing_status_signin">Sign in</string>
+    <string name="doing_status_overflow">Overflow</string>
+    <string name="doing_status_ready">Ready</string>
+    <string name="doing_status_chekcin">Check in</string>
+    <string name="doing_status_signin_chekcin">Sign in &amp; Check in</string>
+    <string name="doing_status_closed">Closed</string>
+    <string name="doing_status_cancelled">Cancelled</string>
+
+    <!-- volunteer status -->
+    <string name="volunteer_status_signed_in">Signed in</string>
+    <string name="volunteer_status_unsigned_in">Unsigned in</string>
+    <string name="volunteer_status_checked_in">Checked in</string>
+    <string name="volunteer_status_not_participate_in">Not participate in</string>
+    <string name="volunteer_status_quit">Quit</string>
+    <string name="volunteer_status_complete">Complete</string>
+    <string name="volunteer_status_error">Error</string>
+    <string name="volunteer_status_kicked_out">Kicked out</string>
+
+
+
+
+    <string name="comment">Comment</string>
+    <string name="select">Select</string>
+    <string name="confirm">Confirm</string>
+    <string name="rate">Rate</string>
+
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="description">Description</string>
+    <string name="affiliation">Affiliation</string>
+
+
+</resources>

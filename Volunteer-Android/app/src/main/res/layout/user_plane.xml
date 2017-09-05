@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_avatar"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        app:border_color="@android:color/white"
+        app:border_width="2dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_avatar"
+        android:layout_alignBottom="@id/user_avatar"
+        android:layout_marginLeft="8dp"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_login"
+        android:layout_alignBottom="@id/user_avatar"
+        android:layout_marginLeft="8dp"
+        android:text="@string/register"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_avatar"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_avatar"
+        android:layout_toRightOf="@id/user_avatar"
+        android:layout_marginLeft="12dp"
+        android:textAppearance="@style/TextAppearance.CardTitle"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_name"
+        android:layout_below="@id/user_name"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_category"
+        android:layout_below="@id/user_category"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/user_avatar"
+        android:text="@string/logout"
+        android:visibility="gone" />
+
+</merge>

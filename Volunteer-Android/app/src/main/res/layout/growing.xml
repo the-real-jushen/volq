@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp" >
+
+    <TableRow
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.CardMessage"
+            android:text="@string/growing_level" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <com.hippo.widget.FixedAspectImageView
+                android:id="@+id/level_image"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="@style/TextAppearance.CardMessage" />
+            
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.CardMessage"
+            android:text="@string/growing_point" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.CardMessage" />
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.CardMessage"
+            android:text="@string/growing_signed_in_activity_number" />
+
+        <TextView
+            android:id="@+id/signed_in_activity_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.CardMessage" />
+
+    </TableRow>
+
+    <TableRow
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.CardMessage"
+            android:text="@string/growing_complete_rate" />
+
+        <TextView
+            android:id="@+id/complete_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.CardMessage" />
+
+    </TableRow>
+
+</TableLayout>

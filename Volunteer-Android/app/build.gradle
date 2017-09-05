@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'jtext103'
+            keyPassword 'jtext103'
+            storeFile file('../../keystore/jtext103.keystore.jks')
+            storePassword 'jtext103'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion '22.0.0'
+    defaultConfig {
+        applicationId "org.volq.volunteer"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 3
+        versionName "0.0.3"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.0.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile 'com.google.zxing:core:3.1.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.alibaba:fastjson:1.1.45.android'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

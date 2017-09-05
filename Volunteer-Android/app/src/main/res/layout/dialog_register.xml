@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:inputType="phone"
+            android:hint="@string/phone"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:inputType="textPersonName"
+            android:hint="@string/name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/gender"
+            android:textColor="@color/primary_text_dark"/>
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/role"
+            android:textColor="@color/primary_text_dark"/>
+
+        <RadioGroup
+            android:id="@+id/role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <RadioButton
+                android:id="@+id/radioButton_volunteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role_volunteer"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_organizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role_organizer"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_organization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role_organization"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/validateText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/hint_captcha"/>
+
+            <ImageView
+                android:id="@+id/validateImage"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@null"
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

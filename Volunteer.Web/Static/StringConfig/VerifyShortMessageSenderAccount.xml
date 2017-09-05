@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>app_id</Key>
+    <Value>358672290000039540</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>app_secret</Key>
+    <Value>0dc1c4fb00bc903ba42e8094ed605f69</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>grant_type</Key>
+    <Value>client_credentials</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>access_token_url</Key>
+    <Value>https://oauth.api.189.cn/emp/oauth2/v3/access_token</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>token_url</Key>
+    <Value>http://api.189.cn/v2/dm/randcode/token</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>send_url</Key>
+    <Value>http://api.189.cn/v2/dm/randcode/sendSms</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

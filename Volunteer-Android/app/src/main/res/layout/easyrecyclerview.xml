@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="match_parent"
+    android:layout_height="match_parent">
+
+</RelativeLayout> -->
+<com.hippo.widget.recyclerview.EasyRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/easyrecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/card_view_half_margin"
+    android:clipToPadding="false" />

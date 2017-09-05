@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43C0CE1E-C181-43DA-89EB-870FAFEF64C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jtext103.Volunteer.DataModels</RootNamespace>
+    <AssemblyName>DataModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\MongoDB\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interface\IVolunteerService.cs" />
+    <Compile Include="Models\Activity\Activity.cs" />
+    <Compile Include="Models\Activity\ActivityBadgeLimit.cs" />
+    <Compile Include="Models\Activity\ActivityState.cs" />
+    <Compile Include="Models\Activity\CheckInRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Activity\CheckOutRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Activity\CheckOutStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Activity\KickOutRecord.cs" />
+    <Compile Include="Models\Activity\SignInRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Activity\VolunteerParticipateInActivityRecord.cs" />
+    <Compile Include="Models\Activity\VolunteerStatusInActivity.cs" />
+    <Compile Include="Models\Camparer\Camparer.cs" />
+    <Compile Include="Models\Communal\Entity.cs" />
+    <Compile Include="Models\Communal\HexagramProperty.cs" />
+    <Compile Include="Models\Token\TokenModel.cs" />
+    <Compile Include="Models\User\OrganizationProfile.cs" />
+    <Compile Include="Models\User\OrganizerProfile.cs" />
+    <Compile Include="Models\User\Profile.cs" />
+    <Compile Include="Models\User\Role.cs" />
+    <Compile Include="Models\User\Sex.cs" />
+    <Compile Include="Models\User\User.cs" />
+    <Compile Include="Models\User\UserAvatar.cs" />
+    <Compile Include="Models\User\VolunteerPoint.cs" />
+    <Compile Include="Models\User\VolunteerProfile.cs" />
+    <Compile Include="Models\User\VolunteerViewOrFavoriteRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSystem\BlogSystem.csproj">
+      <Project>{d79e26ca-16f3-4125-8910-59f9b20ed5df}</Project>
+      <Name>BlogSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringConfig\StringConfig.csproj">
+      <Project>{80e48770-c69e-45f2-9648-a1703190aaf6}</Project>
+      <Name>StringConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Event\Volunteer.Event.csproj">
+      <Project>{cc043530-394e-4a4e-b666-a225dc48d963}</Project>
+      <Name>Volunteer.Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Message\Volunteer.Message.csproj">
+      <Project>{2727dc71-1916-438b-880b-a42616331c36}</Project>
+      <Name>Volunteer.Message</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

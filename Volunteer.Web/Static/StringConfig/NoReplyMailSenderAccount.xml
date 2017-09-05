@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKeyValueOfstringstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <KeyValueOfstringstring>
+    <Key>senderAddress</Key>
+    <Value>robot@volq.org</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>senderName</Key>
+    <Value>volq_robot</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>smtpHost</Key>
+    <Value>smtp.exmail.qq.com</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>smtpPort</Key>
+    <Value>25</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>mailUsername</Key>
+    <Value>robot@volq.org</Value>
+  </KeyValueOfstringstring>
+  <KeyValueOfstringstring>
+    <Key>mailPassword</Key>
+    <Value>jtext103</Value>
+  </KeyValueOfstringstring>
+</ArrayOfKeyValueOfstringstring>

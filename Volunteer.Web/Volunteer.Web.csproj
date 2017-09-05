@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7EBB2A4-B413-4640-8FC9-8E37C74C2730}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jtext103</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc">
+      <HintPath>..\packages\Elmah.MVC.2.1.1\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Jtext103Identity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Jtext103Identity\Jtext103Identity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MongoDB.Bson, Version=1.8.3.9, Culture=neutral, PublicKeyToken=f686731cfb9cc103, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MongoDB\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\MongoDB\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDBProvider">
+      <HintPath>..\packages\Jtext103DBprovider\MongoDBProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="mustache-sharp">
+      <HintPath>..\packages\mustache-sharp.0.2.8.1\lib\net40\mustache-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleRepository">
+      <HintPath>..\packages\SimpleRepository\SimpleRepository.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.2\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.2\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebApiContrib">
+      <HintPath>..\packages\WebAPIContrib.0.9.14.0\lib\net40\WebApiContrib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Test\qunit\jquery-1.7.2.js" />
+    <Content Include="Test\qunit\jquery-1.7.2.min.js" />
+    <Content Include="Test\qunit\qunit-composite.css" />
+    <Content Include="Test\qunit\qunit-composite.js" />
+    <Content Include="Test\qunit\qunit.css" />
+    <Content Include="Test\qunit\qunit.js" />
+    <Content Include="Test\webapi\qunit-utils.js" />
+    <Content Include="Test\webapi\webapi.lookup.tests.html" />
+    <Content Include="Test\webapi\webapi.lookup.tests.js" />
+    <Content Include="Test\webapi\webapi.register.tests.html" />
+    <Content Include="Test\webapi\webapi.register.tests.js" />
+    <Content Include="Test\webapi\webapi.testsuite.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebApiList.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Packages\TaskHelpers.Sources.0.1\TaskHelpers.cs" />
+    <Compile Include="App_Packages\TaskHelpers.Sources.0.1\TaskHelpersExtensions.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\UnhandledExceptionFilter.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ActivityController.cs" />
+    <Compile Include="Controllers\ApiControllerBase.cs" />
+    <Compile Include="Controllers\AuthorizationController.cs" />
+    <Compile Include="Controllers\BadgeController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MobileAppController.cs" />
+    <Compile Include="Controllers\OrganizationController.cs" />
+    <Compile Include="Controllers\OrganizerController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserControllerPartial.cs" />
+    <Compile Include="Controllers\VolunteerController.cs" />
+    <Compile Include="Controllers\VolunteerControllerFriendPartial.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSystem\BlogSystem.csproj">
+      <Project>{d79e26ca-16f3-4125-8910-59f9b20ed5df}</Project>
+      <Name>BlogSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageHandler\ImageHandler.csproj">
+      <Project>{0d418c26-2f15-42cf-91be-3946ff9be15f}</Project>
+      <Name>ImageHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StringConfig\StringConfig.csproj">
+      <Project>{80e48770-c69e-45f2-9648-a1703190aaf6}</Project>
+      <Name>StringConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.ActionValidation\Volunteer.ActionValidation.csproj">
+      <Project>{1897e1ff-85f8-43e4-9de7-ff5fae43c98a}</Project>
+      <Name>Volunteer.ActionValidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Badge\Volunteer.Badge.csproj">
+      <Project>{dc3bc11f-d379-4df7-bce6-3b2b560580f5}</Project>
+      <Name>Volunteer.Badge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.DataModels\Volunteer.DataModels.csproj">
+      <Project>{43c0ce1e-c181-43da-89eb-870fafef64c8}</Project>
+      <Name>Volunteer.DataModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Event\Volunteer.Event.csproj">
+      <Project>{cc043530-394e-4a4e-b666-a225dc48d963}</Project>
+      <Name>Volunteer.Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Friend\Volunteer.Friend.csproj">
+      <Project>{92e9da80-5391-4179-87cd-66262154e944}</Project>
+      <Name>Volunteer.Friend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Mail\Volunteer.Mail.csproj">
+      <Project>{c59f51f8-2c56-41ec-b540-4ee0ed73d241}</Project>
+      <Name>Volunteer.Mail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Message\Volunteer.Message.csproj">
+      <Project>{2727dc71-1916-438b-880b-a42616331c36}</Project>
+      <Name>Volunteer.Message</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Service\Volunteer.Service.csproj">
+      <Project>{eb755e64-c8d3-4f30-9743-bb09e92c4d57}</Project>
+      <Name>Volunteer.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.ShortMessage\Volunteer.ShortMessage.csproj">
+      <Project>{0b894d5d-1fb7-4543-8e1b-9f94028fc564}</Project>
+      <Name>Volunteer.ShortMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Volunteer.Tag\Volunteer.Tag.csproj">
+      <Project>{1d9606eb-4f24-4d6b-9268-59bec4a1a87f}</Project>
+      <Name>Volunteer.Tag</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11578</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10537/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

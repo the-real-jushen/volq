@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/badge_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/header_box"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="120dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/unlock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/header_box"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/details_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/header_box"
+            android:layout_marginTop="44dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="24dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="获取条件" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/badge"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+
