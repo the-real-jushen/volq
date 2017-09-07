@@ -1,6 +1,0 @@
-D:\Project\Volunteer\Volunteer.Event\bin\Debug\Event.dll
-D:\Project\Volunteer\Volunteer.Event\bin\Debug\Event.pdb
-D:\Project\Volunteer\Volunteer.Event\bin\Debug\SimpleRepository.dll
-D:\Project\Volunteer\Volunteer.Event\obj\Debug\Volunteer.Event.csprojResolveAssemblyReference.cache
-D:\Project\Volunteer\Volunteer.Event\obj\Debug\Event.dll
-D:\Project\Volunteer\Volunteer.Event\obj\Debug\Event.pdb

@@ -1,4 +1,0 @@
-D:\Project\Volunteer\StringConfig\bin\Debug\StringConfig.dll
-D:\Project\Volunteer\StringConfig\bin\Debug\StringConfig.pdb
-D:\Project\Volunteer\StringConfig\obj\Debug\StringConfig.dll
-D:\Project\Volunteer\StringConfig\obj\Debug\StringConfig.pdb

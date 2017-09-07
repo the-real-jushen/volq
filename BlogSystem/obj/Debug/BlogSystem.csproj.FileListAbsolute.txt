@@ -1,7 +1,0 @@
-D:\Project\Volunteer\BlogSystem\bin\Debug\Jtext103.BlogSystem.dll
-D:\Project\Volunteer\BlogSystem\bin\Debug\Jtext103.BlogSystem.pdb
-D:\Project\Volunteer\BlogSystem\bin\Debug\Jtext103Identity.dll
-D:\Project\Volunteer\BlogSystem\bin\Debug\SimpleRepository.dll
-D:\Project\Volunteer\BlogSystem\obj\Debug\BlogSystem.csprojResolveAssemblyReference.cache
-D:\Project\Volunteer\BlogSystem\obj\Debug\Jtext103.BlogSystem.dll
-D:\Project\Volunteer\BlogSystem\obj\Debug\Jtext103.BlogSystem.pdb
