@@ -1,4 +1,8 @@
 *.[oa]
-designDoc
 debug/
+bin/
+obj/
+
+~$*.*
+designDoc
 keystore
